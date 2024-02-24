@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Vault <span style="color: orangered;">X</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li ><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">&#9776;</div>
+    </nav>
+    <div class="container">
+        <h1><span>Password</span> Manager</h1>
+        <p>
+            "Introducing VaultX Simplifying Your Password Management! Welcome to VaultX, your straightforward and
+            user-friendly password manager. Streamline your digital life by effortlessly storing and organizing your
+            usernames, passwords, and website details in one convenient place. VaultX provides a hassle-free solution
+            for securely managing your login information without the need for advanced features. Enjoy the simplicity of
+            copying and pasting your credentials whenever you need them. Take the first step towards a more organized
+            and secure online experience. Get started with VaultX today and make password management a breeze!"</p>
+
+
+        <h2>Add a Password</h2>
+        <form action="/submit" method="post">
+
+            <!-- Text input for website -->
+           <div class="web">
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+           </div>
+
+            <!-- Text input for username -->
+           <div class="user">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+           </div>
+            <!-- Password input -->
+           <div class="pass">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+           </div>
+            <p id="msg"></p>
+            <!-- Submit button -->
+            <button class="btn" type="submit">Submit</button>
+        </form>
+        <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
+        <h5 id="nData"></h5>
+       <div class="tab">
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+
+
+        </table>
+       </div>
+    </div>
+    <div class="foot"><p> Made with ❤️ by SURAJ</p></div>
+    
+    <script src="script.js"></script>
+
+</html>
